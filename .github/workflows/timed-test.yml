@@ -1,0 +1,13 @@
+name: Timed Workflow Test
+run-name: Automated run
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  timezone: "America/New_York"
+
+jobs:
+  Explore-Timed-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "This job was automatically run!"
