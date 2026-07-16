@@ -3,7 +3,6 @@ name: Test Schedule
 on:
   schedule:
     - cron: "*/10 * * * *"
-  timezone: "America/New_York"
 
 jobs:
   test_schedule:
