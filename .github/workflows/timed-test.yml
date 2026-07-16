@@ -1,5 +1,4 @@
-name: Timed Workflow Test
-run-name: Automated run
+name: Test Schedule
 
 on:
   schedule:
@@ -7,7 +6,8 @@ on:
   timezone: "America/New_York"
 
 jobs:
-  Explore-Timed-GitHub-Actions:
+  test_schedule:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This job was automatically run!"
+      - name: Test Schedule Job
+        run: echo "This job was automatically run!"
